@@ -1,0 +1,43 @@
+html {
+    width: 100%;
+    font-size: 16px;
+}
+
+@media (max-width: 600px){
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 601px) and (max-width:992px){
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: bisque;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #81d46c;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+button {
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.div2 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
