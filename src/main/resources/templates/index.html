@@ -16,22 +16,7 @@
         <div id="resultados" class="div2"></div>
     </div>
 
-    <script>
-        const sortearBtn = document.getElementById("sortear");
-        const resultadoSorteio = document.getElementById("resultados");
-
-        sortearBtn.addEventListener("click", () =>{
-            fetch("http://localhost:8080/sortear-numeros")
-            .then(response => response.json())
-            .then(numerosSorteados => {
-                resultadoSorteio.innerHTML = `Números Sorteados: ${numerosSorteados.join(", ")}`;
-            })
-            .catch(error => {
-                console.error("Erro ao buscar números: ", error);
-            });
-        });
-
-    </script>
+    <script src="JS/script.js"></script>
 
 </body>
 </html>
